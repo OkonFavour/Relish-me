@@ -1,11 +1,31 @@
 @font-face {
+    font-family: HussarEkologiczne;
+    src: url(./asserts/font/hussar-ekologiczny/HussarEkologiczne1.otf);
+}
+
+@font-face {
     font-family: Futur-font;
     src: url(./asserts/font/futur.ttf);
 }
 
 @font-face {
+    font-family: Bebas-light;
+    src: url(./asserts/font/futura\ light\ bt.ttf);
+}
+
+@font-face {
     font-family: Bebas;
     src: url(./asserts/font/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: Facon;
+    src: url(./asserts/font/facon/Facon.ttf);
+}
+
+@font-face {
+    font-family: Amsterdam;
+    src: url(./asserts/font/Amsterdam\ 400.ttf);
 }
 
 * {
@@ -86,10 +106,12 @@ p {
     background-color: crimson;
 }
 
-.brand h1 {
-    font-size: 3rem;
-    text-transform: uppercase;
+.brand p {
+    font-size: 30px;
+    font-family: Amsterdam;
+    /* text-transform: uppercase; */
     color: white;
+    font-weight: lighter;
 }
 
 .brand h1 span {
@@ -97,9 +119,26 @@ p {
 }
 
 #Brand {
-    text-decoration: none;
+    text-decoration: none !important;
 
 }
+
+.brand-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none !important;
+}
+
+.brand-image {
+    width: 100px; /* Adjust the width as needed */
+    height: auto;
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.brand-text {
+    margin: 0;
+}
+
 
 /* Header section */
 
@@ -132,7 +171,7 @@ p {
     list-style: none;
     position: absolute;
     background-color: rgb(31, 30, 30);
-    width: 100vw;
+    width: 100%; /* Add this line */
     height: 100vh;
     left: 100%;
     top: 0;
@@ -144,6 +183,7 @@ p {
     overflow-x: hidden;
     transition: .5s ease left;
 }
+
 
 #header .nav-list ul.active {
     left: 0;
@@ -283,7 +323,7 @@ p {
     color: transparent;
     animation: text_reveal 5s ease forwards;
     animation-delay: 1s;
-    font-family: Bebas;
+    font-family: Facon;
 }
 
 #hero h1:nth-child(1) {
@@ -394,6 +434,7 @@ p {
     z-index: 1;
     overflow: hidden;
 }
+
 #Third-guy{
     flex-basis: 80%;
     display: flex;
@@ -410,6 +451,7 @@ p {
     z-index: 1;
     overflow: hidden;
 }
+
 #Fourth-guy{
     flex-basis: 80%;
     display: flex;
@@ -631,20 +673,20 @@ p {
 }
 
 #about .col-left .about-img {
-    position: relative;
+    /* position: relative; */
     border: 10px solid white;
 }
 
 #about .col-left .about-img::after {
-    content: '';
+    /* content: '';
     position: absolute;
     left: -33px;
     top: 35px;
     height: 98%;
     width: 98%;
-    /* font-size: 2rem; */
+    font-size: 2rem;
     border: 7px solid crimson;
-    z-index: -1;
+    z-index: -1; */
 }
 
 /* End About Us Section */
@@ -705,10 +747,58 @@ p {
 }
 
 #footer .footer {
-    min-height: 200px;
+    min-height: 500px;
     flex-direction: column;
     padding-top: 50px;
     padding-bottom: 10px;
+}
+
+#Footer-text{
+    color: white;
+    font-family: Bebas;
+    font-size: 40px;
+    line-height: 30px;
+}
+
+.footer-span{
+    font-family: HussarEkologiczne;
+    font-size: 30px;
+}
+
+.footer-mini{
+    line-height: 0px;
+    font-size: 70px;
+}
+
+#return-home{
+    text-decoration: none;
+    color: rgb(241, 11, 11);
+    font-weight: bolder;
+    line-height: 60px;
+    text-transform: capitalize;
+    transition: 3s;
+}
+#p-id{
+    line-height: 0px;
+}
+
+#return-home:hover{
+    color: magenta;
+}
+
+.sub{
+    margin-top: 20px;
+}
+
+.email-sub{
+    display: flex;
+}
+
+hr.full-width {
+    width: 100%;
+    border: none;
+    height: 1px; /* Adjust the height as needed */
+    background-color: white; /* Adjust the color as needed */
 }
 
 #footer h1 {
