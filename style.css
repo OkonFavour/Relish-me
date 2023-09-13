@@ -130,9 +130,11 @@ p {
 }
 
 .brand-image {
-    width: 100px; /* Adjust the width as needed */
+    width: 100px;
+    /* Adjust the width as needed */
     height: auto;
-    margin-right: 10px; /* Adjust the margin as needed */
+    margin-right: 10px;
+    /* Adjust the margin as needed */
 }
 
 .brand-text {
@@ -171,7 +173,8 @@ p {
     list-style: none;
     position: absolute;
     background-color: rgb(31, 30, 30);
-    width: 100%; /* Add this line */
+    width: 100%;
+    /* Add this line */
     height: 100vh;
     left: 100%;
     top: 0;
@@ -397,11 +400,11 @@ p {
     margin-top: 50px;
 }
 
-#smaller-list{
+#smaller-list {
     font-size: 20px;
 }
 
-#First-guy{
+#First-guy {
     flex-basis: 80%;
     display: flex;
     align-items: flex-start;
@@ -418,7 +421,7 @@ p {
     overflow: hidden;
 }
 
-#Second-guy{
+#Second-guy {
     flex-basis: 80%;
     display: flex;
     align-items: flex-start;
@@ -435,7 +438,7 @@ p {
     overflow: hidden;
 }
 
-#Third-guy{
+#Third-guy {
     flex-basis: 80%;
     display: flex;
     align-items: flex-start;
@@ -452,7 +455,7 @@ p {
     overflow: hidden;
 }
 
-#Fourth-guy{
+#Fourth-guy {
     flex-basis: 80%;
     display: flex;
     align-items: flex-start;
@@ -469,7 +472,7 @@ p {
     overflow: hidden;
 }
 
-#Fifth-guy-{
+#Fifth-guy- {
     flex-basis: 80%;
     display: flex;
     align-items: flex-start;
@@ -746,6 +749,56 @@ p {
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 }
 
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-link {
+    color: white !important;
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+    line-height: 70px;
+    /* background-color: red; */
+}
+
+.footer-link:hover {
+    color: crimson !important;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Three equal-width columns */
+    gap: 20px;
+    /* Gap between grid items */
+}
+
+.footer-item {
+    /* background-color: rgba(255, 255, 255, 0.1); Background color for grid items */
+    padding: 20px;
+    /* Adjust the padding as needed */
+    text-align: center;
+    border-radius: 10px;
+    /* Rounded corners for grid items */
+}
+
+#left-side {
+    margin-right: 150px;
+}
+
+.footer-item h2 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.footer-item p {
+    color: white;
+    font-size: 1rem;
+}
+
 #footer .footer {
     min-height: 500px;
     flex-direction: column;
@@ -753,52 +806,60 @@ p {
     padding-bottom: 10px;
 }
 
-#Footer-text{
+#Footer-text {
     color: white;
     font-family: Bebas;
     font-size: 40px;
     line-height: 30px;
 }
 
-.footer-span{
+.footer-span {
     font-family: HussarEkologiczne;
     font-size: 30px;
 }
 
-.footer-mini{
+.footer-mini {
     line-height: 0px;
     font-size: 70px;
 }
 
-#return-home{
+#return-home {
     text-decoration: none;
-    color: rgb(241, 11, 11);
+    color: white;
     font-weight: bolder;
     line-height: 60px;
     text-transform: capitalize;
     transition: 3s;
+    font-size: 18px;
 }
-#p-id{
+
+#p-id {
     line-height: 0px;
 }
 
-#return-home:hover{
-    color: magenta;
+#return-home:hover {
+    color: crimson;
 }
 
-.sub{
+.sub {
     margin-top: 20px;
 }
 
-.email-sub{
+.email-sub {
     display: flex;
+}
+
+#submit:hover {
+    background-color: crimson !important;
 }
 
 hr.full-width {
     width: 100%;
     border: none;
-    height: 1px; /* Adjust the height as needed */
-    background-color: white; /* Adjust the color as needed */
+    height: 1px;
+    /* Adjust the height as needed */
+    background-color: white;
+    /* Adjust the color as needed */
 }
 
 #footer h1 {
@@ -810,6 +871,52 @@ hr.full-width {
     margin-bottom: 10px;
 }
 
+.fa {
+    text-decoration: none;
+    color: black;
+    font-size: 50px !important;
+    padding: 10px;
+}
+
+.fa:hover {
+    color: crimson;
+    transition: .3s ease-in-out;
+}
+
+#buttom .buttom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 30px;
+    font-size: 20px;
+}
+
+#buttom ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    color: white;
+    text-decoration: underline crimson;
+}
+
+#buttom ul li {
+    margin-right: 20px; /* Add some space between list items */
+}
+
+#buttom ul a{
+    color: white;
+}
+
+#buttom ul a li:hover{
+    color: crimson;
+    text-decoration: none;
+}
+
+/* #bottom ul li:hover {
+    text-decoration: none;
+} */
+
 #footer .social-icon {
     display: flex;
     margin-bottom: 30px;
@@ -818,7 +925,7 @@ hr.full-width {
 #footer .social-item {
     height: 50px;
     width: 50px;
-    margin: 0 5px;
+    
 }
 
 #footer .social-item img {
@@ -1053,5 +1160,11 @@ hr.full-width {
     }
 }
 
+@media only screen and (min-width: 768px) {
+    .footer-grid {
+        grid-template-columns: repeat(3, 1fr);
+        /* Adjust column count as needed */
+    }
+}
 
 /*End Media query for Desktop */

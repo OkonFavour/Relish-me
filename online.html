@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Header -->
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <div class="brand">
+                    <a href="#hero" class="brand-link">
+                        <img src="./assets/image/White watermark.png" alt="" style="width: 70px; height: auto; float: left; margin-left: 10px;">
+                        <p id="Brand"  class="brand-text">The creative music house</p>
+                    </a>
+                </div>
+                <div class="nav-list">
+                    <div class="hamburger">
+                        <div class="bar"></div>
+                    </div>
+                    <ul>
+                        <li><a href="./index.html" data-after="Home">Home</a></li>
+                        <li><a href="#services" data-after="Services">Services</a></li>
+                        <li><a href="#projects" data-after="Projects">Projects</a></li>
+                        <li><a href="#about" data-after="About">About</a></li>
+                        <li><a href="#contact" data-after="Contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Header -->
+
+    <div class="container">
+        <h1>Student Registration</h1>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="instrument">Instrument of Interest:</label>
+                <select id="instrument" name="instrument" required>
+                    <option value="">Select an Instrument</option>
+                    <option value="Piano">Piano</option>
+                    <option value="Guitar">Guitar</option>
+                    <option value="Violin">Violin</option>
+                    <option value="Voice">Voice</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="experience">Musical Experience:</label>
+                <textarea id="experience" name="experience" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
