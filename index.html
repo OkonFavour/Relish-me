@@ -26,12 +26,12 @@
                     <div class="hamburger">
                         <div class="bar"></div>
                     </div>
-                    <ul>
+                    <ul class="hidden">
                         <li><a href="#hero" data-after="Home">Home</a></li>
                         <li><a href="#services" data-after="Services">Services</a></li>
-                        <li><a href="#projects" data-after="Projects">Projects</a></li>
-                        <li><a href="#about" data-after="About">About</a></li>
-                        <li><a href="#contact" data-after="Contact">Contact</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#about" data-after="Contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -41,77 +41,88 @@
     <!-- Hero Section -->
     <section id="hero">
         <div class="hero container">
-            <div>
+            <div id="Hero-heading">
                 <h1 id="Landing-pg">Relish <span></span></h1>
                 <h1 id="Landing-pg">Music <span></span></h1>
                 <h1 id="Landing-pg">Academy <span></span></h1>
-                <a href="./get.html" type="button" class="cta">Register Now!</a>
+                <a href="./online.html" type="button" class="cta">Register Now!</a>
             </div>
         </div>
         <!-- <img src="./asserts/image/DSC_0718.jpg" alt=""> -->
     </section>
+    <!-- <section id="vido">
+        <div class="video-container">
+            <video id="video-player" controls>
+                <source src="video1.mp4" type="video/mp4">
+            </video>
+            <div class="playlist">
+                <ul id="video-list">
+                    <li><a href="./asserts/video/y2mate.com - grazy bass boy_1080p.mp4">Video 1</a></li>
+                    <li><a href="./asserts/video/322276540_825706765157261_8934953077100397094_n.mp4">Video 2</a></li>
+                    <li><a href="./asserts/video/IMG_1814.MOV">Video 3</a></li>
+                </ul>
+            </div>
+            <i id="next-video-icon" class="fa fa-arrow-right" aria-hidden="true"></i>
+        </div>
+    </section> -->
 
     <!--Service Section-->
     <section id="services">
         <div class="services container">
             <div class="service-top">
                 <h1 class="section-title">Our Serv<span>i</span>ces</h1>
-                <!-- <div>
+                <div>
                     <ul id="mmmm">
-                        <li id="main">Within the realm of our music training, the symphony of skills unfoldds in
-                            melodies through the
-                            following:
-                            <ul id="smaller-list">
-                                <li>
-                                    Music composition
-                                </li>
-                                <li>
-                                    Sight reading
-                                </li>
-                                <li>
-                                    Mastery of musical instrument
-                                </li>
-                                <li>
-                                    Vocal Training
-                                </li>
-                            </ul>
+
+                        <li>
+                            Music composition
+                        </li>
+                        <li>
+                            Sight reading
+                        </li>
+                        <li>
+                            Mastery of musical instrument
+                        </li>
+                        <li>
+                            Vocal Training
                         </li>
                         <li>Concert and Evevnt management</li>
                         <li>music consultation and supplies of musical instrument</li>
                     </ul>
-                </div> -->
+                </div>
             </div>
-            <div class="service-bottom">
-                <div class="service-item" id="First-guy">
-                    <div class="icon"><i class="bi bi-gear-fill"></i></div>
-                    <h2>Strings Lessons</h2>
-                    <p>Learning finger placement and techniques across different string instruments like Violin, Guitar,
-                        Viola, Cello, Bass, e.t.c</p>
-                </div>
-                <div class="service-item" id="Second-guy">
-                    <div class="icon"><i class="bi bi-gear-fill"></i></div>
-                    <h2>Piano Lessons</h2>
-                    <p>Learning and developing hand cordination, mastering key transitions and interpreting intricate
-                        musical expressions</p>
-                </div>
-                <div class="service-item" id="Third-guy">
-                    <div class="icon"><i class="bi bi-gear-fill"></i></div>
-                    <h2>Woodwind Lessons</h2>
-                    <p>Our Woodwind training involves mastering breath control, finger dexterity and the act
-                        of producing nuanced tones.</p>
-                </div>
-                <div class="service-item" id="Fourth-guy">
-                    <div class="icon"><i class="bi bi-gear-fill"></i></div>
-                    <h2>Percussion Lessons</h2>
-                    <p>This focus on rhythmic Percussion, cordination between limbs and exploring a wide array of
-                        percusive textures.</p>
-                </div>
+
+            <div class="service-item" id="First-guy">
+                <div class="icon"><i class="bi bi-gear-fill"></i></div>
+                <h2>Strings Lessons</h2>
+                <p>Learning finger placement and techniques across different string instruments like Violin,
+                    Guitar,
+                    Viola, Cello, Bass, e.t.c</p>
+            </div>
+            <div class="service-item" id="Second-guy">
+                <div class="icon"><i class="bi bi-gear-fill"></i></div>
+                <h2>Piano Lessons</h2>
+                <p>Learning and developing hand cordination, mastering key transitions and interpreting
+                    intricate
+                    musical expressions</p>
+            </div>
+            <div class="service-item" id="Third-guy">
+                <div class="icon"><i class="bi bi-gear-fill"></i></div>
+                <h2>Woodwind Lessons</h2>
+                <p>Our Woodwind training involves mastering breath control, finger dexterity and the act
+                    of producing nuanced tones.</p>
+            </div>
+            <div class="service-item" id="Fourth-guy">
+                <div class="icon"><i class="bi bi-gear-fill"></i></div>
+                <h2>Percussion Lessons</h2>
+                <p>This focus on rhythmic Percussion, cordination between limbs and exploring a wide array of
+                    percusive textures.</p>
             </div>
 
         </div>
         </div>
     </section>
-    <!--End Service Section-->
+    <!--End Service Section
 
     <!-- Projects Section -->
     <section id="projects">
@@ -123,7 +134,7 @@
                 <div class="project-item">
                     <div class="project-info">
                         <h1>Project 1</h1>
-                        <h2>Coding is fun</h2>
+                        <h2>Serenade De La Cross</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat illo cupiditate doloremque
                             maiores quod soluta exercitationem dolore, sequi rem. Harum optio, veritatis unde nisi
                             labore, quasi repudiandae minima ipsam saepe quod architecto iure consequatur esse nostrum
@@ -136,7 +147,7 @@
                 <div class="project-item">
                     <div class="project-info">
                         <h1>Project 2</h1>
-                        <h2>Coding is fun</h2>
+                        <h2>Summer Class</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat illo cupiditate doloremque
                             maiores quod soluta exercitationem dolore, sequi rem. Harum optio, veritatis unde nisi
                             labore, quasi repudiandae minima ipsam saepe quod architecto iure consequatur esse nostrum
@@ -146,7 +157,7 @@
                         <img src="./asserts/image/RELISH MUSIC ACADEMY (1).png" alt="">
                     </div>
                 </div>
-                <div class="project-item">
+                <!-- <div class="project-item">
                     <div class="project-info">
                         <h1>Project 3</h1>
                         <h2>Coding is fun</h2>
@@ -171,37 +182,40 @@
                     <div class="project-img">
                         <img src="./asserts/image/side-of-a-violin.jpeg" alt="">
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
     <!-- End Projects Section -->
 
     <!-- About Me -->
-    <section id="about">
+    <!-- <section id="about">
         <div class="about container">
             <div class="col-left">
                 <div class="about-img">
-                    <img src="./asserts/image/DSC_0094.JPG" alt="">
+                    <img src="./asserts/image/Black Watermark .png" alt="" style="margin-bottom: 40px; !important" class="">
                 </div>
             </div>
             <div class="col-right">
                 <h1 class="section-title">About <span>Us</span></h1>
                 <h2>Relish Music Academy</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut rem ipsa odit nulla, laboriosam nam,
-                    quam qui possimus, totam ab dolorem enim obcaecati vero delectus temporibus ea explicabo non
-                    accusantium dolore. Ex non pariatur quibusdam tenetur rem ipsa voluptatibus repellendus sapiente
-                    neque molestias eum deleniti obcaecati nemo eveniet, voluptate quis ea, aperiam molestiae quas
-                    veritatis animi, saepe iste architecto. Optio nobis porro similique praesentium esse maxime, fugiat,
-                    ut sequi odio saepe, unde ex delectus ipsum velit alias doloremque.</p>
-                <a href="#" class="cta">Download Resume</a>
+                <p>At Relish Music Academy, we are passionate about nurturing the musical talents within every
+                    individual. Established in 2019, we have been a harmonious presence in the world of music education,
+                    dedicated to creating a symphony of learning experiences in young people and adult.
+                    <br>Our mission is simple: to inspire, educate, and empower music enthusiasts of all ages and skill
+                    levels. We believe that music is not just an art form but a universal language that connects hearts
+                    and transcends boundaries. Our academy exists to foster this connection through exceptional music
+                    education.
+
+                </p>
+                <a href="./online.html" class="cta">Get Started</a>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- End  About Me -->
 
     <!-- Footer -->
-    <section id="footer">
+    <!-- <section id="footer">
         <footer>
             <div class="footer container">
                 <div class="footer-grid">
@@ -254,9 +268,9 @@
                     </div>
                     <div class="footer-item">
                         <div>
-                            <a href="" class="footer-link">Jobs at Relish</a><br>
-                            <a href="" class="footer-link">Make your Music</a><br>
-                            <a href="" class="footer-link">Contact Us</a><br>
+                            <a href="./about.html" class="footer-link">About Us</a><br>
+                            <a href="https://web.facebook.com/profile.php?id=100064049772596" class="footer-link">Make your Music</a><br>
+                            <a href="./about.html" class="footer-link">Contact Us</a><br>
                             <a href="https://web.facebook.com/TheCreativeMusicHouse"><i class="fa fa-facebook-official"
                                     aria-hidden="true"></i></a>
                             <a href="https://www.instagram.com/relishmusicacademy_official/"><i class="fa fa-instagram"
@@ -269,7 +283,7 @@
                     <div class="footer-item">
                         <div class=>
                             <a href="" class="footer-link">Terms and conditions</a><br>
-                            <a href="" class="footer-link">Donate</a><br>
+                            <a href="./about.html" class="footer-link">Our Best Team</a><br>
                             <a href="./online.html" class="footer-link">Online Classes</a>
                         </div>
                     </div>
@@ -298,9 +312,9 @@
                 </div>
             </section>
         </div>
-    </section>
+    </section> -->
     <!--End Footer -->
-    <script src="./app.js"></script>
+    <script src="./video.js"></script>
 </body>
 
 </html>

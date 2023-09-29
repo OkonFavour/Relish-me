@@ -1,0 +1,447 @@
+@font-face {
+    font-family: HussarEkologiczne;
+    src: url(./asserts/font/hussar-ekologiczny/HussarEkologiczne1.otf);
+}
+
+@font-face {
+    font-family: Futur-font;
+    src: url(./asserts/font/futur.ttf);
+}
+
+@font-face {
+    font-family: Bebas-light;
+    src: url(./asserts/font/futura\ light\ bt.ttf);
+}
+
+@font-face {
+    font-family: Bebas;
+    src: url(./asserts/font/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: Facon;
+    src: url(./asserts/font/facon/Facon.ttf);
+}
+
+@font-face {
+    font-family: Amsterdam;
+    src: url(./asserts/font/Amsterdam\ 400.ttf);
+}
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(208, 208, 208);
+}
+
+html {
+    font-size: 10px;
+    font-family: Futur-font;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cta {
+    text-decoration: none;
+
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+p {
+    color: black;
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+}
+
+.section-title {
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+
+}
+
+.section-title span {
+    color: crimson;
+}
+
+.cta {
+    display: inline-block;
+    padding: 10px 30px;
+    color: crimson;
+    background-color: transparent;
+    border: 2px solid crimson;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 16px;
+    margin-top: 30px;
+    transition: 3s ease;
+    transition-property: background-color, color;
+}
+
+.cta:hover {
+    color: white;
+    background-color: crimson;
+}
+
+.brand p {
+    font-size: 30px;
+    font-family: Amsterdam;
+    /* text-transform: uppercase; */
+    color: white;
+    font-weight: lighter;
+}
+
+.brand h1 span {
+    color: crimson;
+}
+
+#Brand {
+    text-decoration: none !important;
+
+}
+
+.brand-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none !important;
+}
+
+.brand-image {
+    width: 100px;
+    /* Adjust the width as needed */
+    height: auto;
+    margin-right: 10px;
+    /* Adjust the margin as needed */
+}
+
+.brand-text {
+    margin: 0;
+}
+
+
+/* Header section */
+
+#header {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: auto;
+}
+
+#header .header {
+    min-height: 8vh;
+    background-color: rgba(31, 30, 30, 0.24);
+    transition: .3s ease background-color;
+}
+
+.header .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    max-width: 1300px;
+    padding: 0 10px;
+}
+
+#header .nav-list ul {
+    list-style: none;
+    position: absolute;
+    background-color: rgb(31, 30, 30);
+    width: 100%;
+    /* Add this line */
+    height: 100vh;
+    left: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: .5s ease left;
+}
+
+
+#header .nav-list ul.active {
+    left: 0;
+}
+
+#header .nav-list ul a {
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px;
+    display: block;
+}
+
+#header .nav-list ul a::after {
+    content: attr(data-after);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: rgba(240, 248, 255, 0.021);
+    font-size: 13rem;
+    letter-spacing: 50%;
+    z-index: -1;
+    transition: .3s ease letter-spacing;
+}
+
+#header .nav-list ul li:hover a::after {
+    transform: translate(-50%, -50%) scale(1);
+    letter-spacing: initial;
+}
+
+#header .nav-list ul li:hover a {
+    color: crimson;
+}
+
+#header .hamburger {
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    cursor: pointer;
+    transform: scale(.8);
+    margin-right: 20px;
+}
+
+#header .hamburger::after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid white;
+    animation: hamburger_puls 1s ease infinite;
+}
+
+#header .hamburger .bar {
+    height: 2px;
+    width: 30px;
+    position: relative;
+    background-color: white;
+    z-index: -1;
+}
+
+#header .hamburger .bar::after,
+#header .hamburger .bar::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background-color: white;
+    transition: .3s ease;
+    transition-property: top, bottom;
+}
+
+#header .hamburger .bar::after {
+    top: 8px;
+}
+
+#header .hamburger .bar::before {
+    bottom: 8px;
+}
+
+#header .hamburger.active .bar::before {
+    bottom: 0;
+}
+
+#header .hamburger.active .bar::after {
+    top: 0;
+}
+
+
+/*End Header section */
+
+
+
+.row {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 100px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+strong {
+    font-size: 25px;
+}
+
+li {
+    font-size: 20px;
+}
+
+ul {
+    line-height: 30px;
+}
+
+#message{
+    width: 70%;
+    height: 30%;
+    /* margin-top: 70px; */
+}
+
+.con{
+    margin-top: 90px;
+}
+
+.ulll{
+    font-weight: bold;
+    list-style: inside;
+}
+/* Card styling */
+
+/* Basic card styles */
+
+.card1{
+    max-width: 300px;
+    background-color: rgb(41,50,60);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+.mile {
+    text-align: center;
+    color: crimson;
+}
+
+.card-holder {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-left: 70px;
+}
+
+.card {
+    max-width: 300px;
+    background-color: rgb(41,50,60);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    height: 70%;
+}
+
+.fa1{
+    color: blue !important;
+    font-size: 18px;
+    margin-left: 50px;
+}
+
+.fa-home{
+    margin-left: 30px!important;
+}
+
+.card img {
+    max-width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.online-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content1{
+    text-align: center;
+    padding-top: 20px;
+    background-color: rgb(130, 26, 47);
+    border-radius: 20px;
+}
+
+/* Card title */
+.card-title {
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* Card text */
+.card-text {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Card button */
+.card-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px !important;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.card-button:hover {
+    background-color: #0056b3;
+}
+
+/* our-team */
+
+#our-team{
+    padding-top: 200px;
+}
+
+.team{
+    font-size: 40px;
+}
+
+.member{
+    font-size: 20px;
+}
+
+.member1{
+    font-size: 15px;
+}
+
+
+/*End our-team */
