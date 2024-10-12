@@ -1,34 +1,22 @@
-const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
-const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
-const header = document.querySelector('.header.container');
+const express = require('express');
+const bodyParser = require('body-parser');
 
-hamburger.addEventListener('click', ()=>{
-    hamburger.classList.toggle('active')
-    mobile_menu.classList.toggle('active')
-})
+const app = express();
+const port = 3000;
 
-document.addEventListener('scroll',()=>{
-    var scroll_position = window.scrollY;
-    if(scroll_position > 250) {
-        header.style.backgroundColor = '#29323c';
-    } else {
-        header.style.backgroundColor = 'transparent';
-    }
-} )
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
-const navLinks = document.querySelectorAll('.nav-list ul li a');
+// Endpoint to process payments
+app.post('/processPayment', (req, res) => {
+  const paymentData = req.body;
+  // In a real application, you would integrate with a payment gateway here
+  // and handle the payment processing.
+  // Simulating success for this example:
+  const paymentResult = { success: true, message: 'Payment processed successfully' };
+  res.json(paymentResult);
+});
 
-navLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const targetId = link.getAttribute('href');
-        
-        document.querySelector(targetId).scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        });
-        
-        hamburger.classList.remove('active');
-        mobile_menu.classList.remove('active');
-    });
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
 });
