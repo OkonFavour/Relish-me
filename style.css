@@ -700,10 +700,10 @@ button:hover {
     padding: 100px 20px;
 }
 
-#about .col-left {
+/* #about .col-left {
     width: 250px;
     height: 30px;
-}
+} */
 
 /* #about .col-right{
     width: 100px;
@@ -731,7 +731,7 @@ button:hover {
 #about .col-left .about-img {
     /* position: relative; */
     /* border: 10px solid white; */
-    margin-bottom: 100px !important;
+    /* margin-bottom: 100px !important; */
     padding-bottom: 50px;
 }
 
@@ -819,7 +819,7 @@ footer {
 }
 
 .footer-item {
-    /* background-color: rgba(255, 255, 255, 0.1); Background color for grid items */
+    /* background-color: rgba(255,X 255, 255, 0.1); Background color for grid items */
     padding: 20px;
     /* Adjust the padding as needed */
     text-align: center;
@@ -828,7 +828,7 @@ footer {
 }
 
 #left-side {
-    margin-right: 150px;
+    margin-right: 150px;/
 }
 
 .footer-item h2 {
@@ -842,7 +842,7 @@ footer {
 }
 
 #footer .footer {
-    min-height: 500px;
+    min-height: 10%;
     flex-direction: column;
     padding-top: 50px;
     padding-bottom: 10px;
@@ -1089,19 +1089,19 @@ hr.full-width {
     /* End  Project */
 
     /* About */
-    #about .col-left {
+    /* #about .col-left {
         width: 600px;
         height: 400px;
         padding-left: 60px;
-    }
+    } */
 
-    #about .about .col-left .about-img::after {
+    /* #about .about .col-left .about-img::after {
         left: -45px;
         top: 34px;
         height: 98%;
         width: 98%;
         border: 10px solid crimson;
-    }
+    } */
 
     #about .col-left {
         text-align: left;
@@ -1112,9 +1112,6 @@ hr.full-width {
         text-align: left;
     }
 
-    .about-img {
-        width: 450px;
-    }
 
     /* End About */
 
@@ -1214,6 +1211,11 @@ hr.full-width {
         grid-template-columns: repeat(3, 1fr);
         /* Adjust column count as needed */
     }
+
+    .about-img {
+        width: 350px !important;
+        /* height: 100px !important; */
+    }
 }
 
 /*End Media query for Desktop */
@@ -1244,7 +1246,7 @@ hr.full-width {
     }
 
     .cta {
-        font-size: 10px;
+        font-size: 10px !important;
     }
 
     .brand-text {
@@ -1261,7 +1263,7 @@ hr.full-width {
         max-margin: 0 auto;
     }
 
-    .section-title{
+    .section-title {
         font-size: 20px !important;
     }
 
@@ -1269,19 +1271,41 @@ hr.full-width {
         font-size: 10px !important;
         text-wrap: wrap;
         list-style-type: disc;
-        
+
     }
+
+    #projects .project-item {
+        flex-direction: column !important;
+        padding-bottom: 20px;
+    }
+
+    #projects .project-img {
+        flex-basis: 50%;
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .about-img {
+        width: 50% auto !important;
+    }
+
+    .col-right-h2 {
+        font-size: 20px !important;
+        font-weight: bold !important;
+    }
+
+    .col-right-p {
+        text-wrap: wrap;
+        text-align: justify;
+    }
+
     
-    /* #main{
-        color: red !important;
-    }
-
-    #smaller-list{
-        color: green !important;
-    } */
-
-
+   
 }
+
+
+
 
 /* -----------------------------
     Styling for Pay.html 
